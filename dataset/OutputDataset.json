@@ -1,0 +1,25 @@
+{
+	"name": "OutputDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": false,
+				"firstRowAsHeader": false
+			},
+			"fileName": {
+				"value": "@CONCAT(pipeline().RunId, '.txt')",
+				"type": "Expression"
+			},
+			"folderPath": "adftutorial/output"
+		}
+	}
+}

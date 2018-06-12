@@ -1,0 +1,12 @@
+{
+	"name": "AzureStorage1",
+	"properties": {
+		"type": "AzureStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "SecureString",
+				"value": "**********"
+			}
+		}
+	}
+}

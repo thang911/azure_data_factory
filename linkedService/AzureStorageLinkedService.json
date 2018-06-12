@@ -1,0 +1,12 @@
+{
+	"name": "AzureStorageLinkedService",
+	"properties": {
+		"type": "AzureStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "SecureString",
+				"value": "**********"
+			}
+		}
+	}
+}
