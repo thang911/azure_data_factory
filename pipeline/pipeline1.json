@@ -10,5 +10,6 @@
 				}
 			}
 		]
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }
